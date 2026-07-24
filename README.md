@@ -1,7 +1,7 @@
 # Cortex-Hub
 AI Workspace Dashboard
 
-## Abstract
+# Abstract
 
 The AI Workspace Dashboard is a frontend-only web application that reimagines how users organize and interact with AI-assisted work, combining core interaction patterns from tools like Notion, ChatGPT, and Linear into one cohesive workspace. Built entirely with mock data and no backend dependency, it simulates a modern SaaS product used to manage AI conversations, prompts, notes, tasks, and files in a single interface.
 
