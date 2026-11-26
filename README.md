@@ -1,16 +1,12 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Cortex-Hub
+AI Workspace Dashboard
 
-Currently, two official plugins are available:
+## Abstract
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The AI Workspace Dashboard is a frontend-only web application that reimagines how users organize and interact with AI-assisted work, combining core interaction patterns from tools like Notion, ChatGPT, and Linear into one cohesive workspace. Built entirely with mock data and no backend dependency, it simulates a modern SaaS product used to manage AI conversations, prompts, notes, tasks, and files in a single interface.
 
-## React Compiler
+The application features an AI Chat module for simulated assistant conversations, allowing users to interact with a mock AI in a familiar chat-based format. A Prompt Library enables users to save, categorize, and search reusable prompts, while a Kanban-style board supports visual task and project management. A dedicated Notes section allows lightweight content creation and organization. The central Dashboard consolidates key productivity metrics and activity summaries through interactive charts and widgets, complemented by a File Manager for organizing documents and a Settings panel for personalizing the workspace experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Together, these modules form a unified, production-style productivity platform that demonstrates practical frontend engineering skills, including component-based architecture, state management, form handling, and data visualization, within a fully client-side application.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
