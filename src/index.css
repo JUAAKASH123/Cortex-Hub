@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    width: 100%;
+    min-height: 100%;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+:root{
+    --primary:#4f46e5;
+    --grey:#f7f8fa;
+}
