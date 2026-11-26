@@ -29,27 +29,20 @@
 
 /* ---------- brand ---------- */
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin: 0;
-    padding: 0 6px 16px;
+    padding: 0 0 16px;
     border-bottom: 1px solid var(--nb-line);
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    color: var(--nb-text);
-    white-space: nowrap;
 }
-.brand-tile {
-    flex-shrink: 0;
-    display: grid;
-    place-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 0;
-    background: #fff;
-    color: var(--nb-bg);
+/* light version of the logo, sits directly on the primary colour */
+.brand-logo {
+    display: block;
+    padding: 2px 4px;
+    line-height: 0;
+}
+.brand-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* ---------- menu ---------- */
@@ -157,8 +150,10 @@
 
     .navbar { width: 64px; padding-inline: 10px; }
 
+    /* the <picture> swaps to the icon-only mark */
+    .brand-logo { padding: 2px 4px; }
+
     /* labels stay available to screen readers, just not visible */
-    .brand-text,
     .nav-text {
         position: absolute;
         width: 1px;
@@ -168,7 +163,6 @@
         white-space: nowrap;
     }
 
-    .brand { justify-content: center; padding-inline: 0; }
     .nav-link { justify-content: center; padding: 0; gap: 0; }
 
     .profile { flex-direction: column; padding: 12px 0 0; gap: 6px; }

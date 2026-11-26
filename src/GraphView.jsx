@@ -3,10 +3,10 @@ import { Background, Controls, Handle, MiniMap, Position, ReactFlow, useNodesSta
 import '@xyflow/react/dist/style.css'
 import { collectDirs, fileIcon, layoutGraph } from './fileTreeUtils'
 
-const COL_W = 220 // horizontal distance between levels
-const ROW_H = 42  // vertical distance between rows
+const COL_W = 220 
+const ROW_H = 42  
 
-/* One box in the graph: icon + name (+ file count when a folder is collapsed) */
+
 function FileNode({ data }) {
     const { node, isCollapsed, clickable } = data
     const icon = node.type === 'dir' ? (isCollapsed ? '📁' : '📂') : fileIcon(node.name)

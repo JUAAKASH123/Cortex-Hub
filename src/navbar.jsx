@@ -2,6 +2,8 @@ import { NavLink, useNavigate } from 'react-router';
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase';
 import { useAuth } from './AuthContext';
+import logoFull from './assets/cortex-hub-logo.png';
+import logoMark from './assets/cortex-hub-mark.png';
 import './navbar.css';
 
 const Icon = ({ children }) => (
@@ -45,15 +47,11 @@ function Navbar() {
     return (
         <nav className="navbar" aria-label="Main">
             <h3 className="brand">
-                <span className="brand-tile" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 28 28">
-                        <path d="M8 19l6-10 6 10M8 19h12" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" opacity="0.6" />
-                        <circle cx="14" cy="8" r="3.2" fill="currentColor" />
-                        <circle cx="7.5" cy="19.5" r="3.2" fill="currentColor" />
-                        <circle cx="20.5" cy="19.5" r="3.2" fill="currentColor" />
-                    </svg>
-                </span>
-                <span className="brand-text">Cortex Hub</span>
+                {/* full logo on wide screens, icon-only mark on the 64px rail */}
+                <picture className="brand-logo">
+                    <source media="(max-width: 900px)" srcSet={logoMark} />
+                    <img src={logoFull} alt="Cortex Hub – Your AI Workspace" />
+                </picture>
             </h3>
 
             <ul>
