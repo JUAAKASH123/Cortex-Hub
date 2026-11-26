@@ -11,6 +11,7 @@ import Note from './Note'
 import Prompt from './prompt'
 import Task from './task_manager'
 import FileManager from './file_Manager'
+import RootRoute from './RootRoute'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/' element={<RootRoute />} />
         <Route path='/Landing_Page' element={<Landing_Page/>}/>
         <Route path='/Signup' element={<Signup/>}/>
         <Route path='/Login' element={<Login/>}/>
